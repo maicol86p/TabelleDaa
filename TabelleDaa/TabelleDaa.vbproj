@@ -12,7 +12,7 @@
     <AssemblyName>TabelleDaa</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
@@ -44,10 +44,10 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\..\ACSI\Svi\ACSINuovo\Exe\DAA Fase 4.0\</OutputPath>
     <DocumentationFile>TabelleDaa.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -66,10 +66,6 @@
   <ItemGroup>
     <Reference Include="C1.Win.C1List.2, Version=2.1.20092.156, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL" />
     <Reference Include="C1.Win.C1TrueDBGrid.2, Version=2.0.20092.61165, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL" />
-    <Reference Include="FunzioniIntegra, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Librerie\FunzioniIntegra\FunzioniIntegra\bin\Release\FunzioniIntegra.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -114,6 +110,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -166,6 +163,16 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="\\vec-srv-sviluppo\SRV2008\SVILUPPO\Librerie\FlexGroup\FlexGroup\FlexGroup.vbproj">
+      <Project>{ca944aab-2068-4d44-9808-8c146c8670d9}</Project>
+      <Name>FlexGroup</Name>
+    </ProjectReference>
+    <ProjectReference Include="\\vec-srv-sviluppo\SRV2008\SVILUPPO\Librerie\FunzioniIntegra\FunzioniIntegra\FunzioniIntegra.vbproj">
+      <Project>{087a0764-9646-4c9b-9846-9af41ebdd071}</Project>
+      <Name>FunzioniIntegra</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
